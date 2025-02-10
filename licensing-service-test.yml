@@ -1,6 +1,12 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://database:5432/ostock_dev
-    username: postgres
-    password: pass
-    driver-class-name: org.postgresql.Driver
+spring.application.name=licensing-service
+
+spring.datasource.url=jdbc:postgresql://database:5432/ostock_dev
+spring.datasource.username=postgres
+spring.datasource.password=pass
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.hikari.maximum-pool-size=5
+
+# spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+licensing.service.encryption-key=IMSYMMETRIC
