@@ -9,4 +9,4 @@ spring:
           contentType: application/json
       kafka:
         binder:
-          brokers: localhost:9092
+          brokers: host.docker.internal:9092
